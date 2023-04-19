@@ -1,0 +1,30 @@
+.article-tile {
+  background-color: #FFFCE8;
+  height: 12vh;
+  width: 87vw;
+  max-width: 756px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tile-img {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 5px;
+}
+
+.tile-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 30vw
+}
+
+.tile-category {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #697A21;
+}
