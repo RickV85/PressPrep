@@ -17,8 +17,7 @@
 }
 
 .news-dropdown {
-  min-width: fit-content;
-  width: 30vw;
+  width: fit-content;
   border-radius: 5px;
   padding: 5px;
 }
