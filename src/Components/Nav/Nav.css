@@ -1,4 +1,17 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-divider {
-  border-color: #B8B42D;
-  border-width: 4px;
+  background-color: #B8B42D;
+  border: none;
+  height: 4px;
+  width: 100vw;
+}
+
+.home-link {
+  text-decoration: none;
+  width: fit-content;
 }

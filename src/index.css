@@ -19,4 +19,5 @@ h1 {
   font-weight: 900;
   color: #B8B42D;
   padding: 1rem;
+  width: fit-content;
 }
