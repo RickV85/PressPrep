@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './Home.css'
+import Nav from '../../Components/Nav/Nav'
+import BrowseView from '../BrowseView/BrowseView'
 
-function Home() {
+export default function Home() {
   
 
   return (
     <main>
-      <p>TEST</p>
+      <Nav />
+      <BrowseView />
     </main>
   )
 }
-
-export default Home
