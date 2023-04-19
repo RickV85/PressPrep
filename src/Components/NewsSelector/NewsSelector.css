@@ -1,0 +1,24 @@
+.news-selector {
+  background-color: #697A21;
+  width: 95vw;
+  height: 7vh;
+  min-height: fit-content;
+  max-width: 800px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.choose-news {
+  padding-right: 20px;
+}
+
+.news-dropdown {
+  min-width: fit-content;
+  width: 30vw;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -1,3 +1,4 @@
+import NewsSelector from '../../Components/NewsSelector/NewsSelector'
 import './BrowseView.css'
 
 export default function BrowseView() {
@@ -5,7 +6,7 @@ export default function BrowseView() {
 
   return (
     <section className="browse-view">
-      <p>Browse view</p>
+      <NewsSelector />
     </section>
   )
 }
