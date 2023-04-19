@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './NewsSelector.css'
 
 interface Props {
@@ -7,17 +7,16 @@ interface Props {
 }
 
 export default function NewsSelector({newsType, setNewsType} : Props) {
-  const [selectedNews, setSelectedNews] = useState("home");
+  const [selectedNews, setSelectedNews] = useState(newsType);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    event.preventDefault();
-    setSelectedNews(event.target.value);
-  }
-
+  useEffect(() => {
+    setNewsType(selectedNews)
+  }, [selectedNews])
+ 
   return (
     <section className='news-selector'>
       <h2 className='choose-news'>Choose your news:</h2>
-      <select className='news-dropdown' onChange={(event) => handleChange(event)}>
+      <select className='news-dropdown' onChange={(event) => setSelectedNews(event.target.value)}>
         <option value="home">Home (Top Stories)</option>
         <option value="us">US News</option>
         <option value="world">World News</option>

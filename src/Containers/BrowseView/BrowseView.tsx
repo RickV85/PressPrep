@@ -1,15 +1,25 @@
 import './BrowseView.css'
-import NewsSelector from '../../Components/NewsSelector/NewsSelector'
-import NewsResults from '../NewsResults/NewsResults'
 import { useEffect, useState } from 'react';
+import NewsSelector from '../../Components/NewsSelector/NewsSelector';
+import NewsResults from '../NewsResults/NewsResults';
+import getNewsResults from '../../APICalls';
+
 
 export default function BrowseView() {
   const [newsData, setNewsData] = useState();
-  const [newsType, setNewsType] = useState("");
+  const [newsType, setNewsType] = useState("home");
 
   useEffect(() => {
-
-  }, [])
+    getNewsResults(newsType)
+    .then(data => {
+      if (data) {
+        setNewsData(data.results)
+      }
+    })
+    .catch(error => {
+      alert(error)
+    })
+  }, [newsType])
 
   return (
     <section className="browse-view">
