@@ -1,12 +1,49 @@
-import './ArticleTile.css'
+import "./ArticleTile.css";
+import StringUtil from "../../util/util";
 
-export default function ArticleTile() {
+interface Props {
+  articleData: {
+    title: string;
+    multimedia: Multimedia[];
+    section: string;
+    subsection: string;
+  };
+}
+
+interface Multimedia {
+  url: string;
+  format: string;
+  height: number;
+  width: number;
+  type: string;
+  subtype: string;
+  caption: string;
+  copyright: string;
+}
+
+export default function ArticleTile({ articleData }: Props) {
+  const thumbnailImg = articleData.multimedia.find(
+    (pic) => pic.format === "Large Thumbnail"
+  );
+  let section;
+  let subsection;
+
+  if (articleData.section) {
+    section = StringUtil.capFirstLetter(articleData.section);
+  }
+  if (articleData.subsection) {
+    subsection = StringUtil.capFirstLetter(articleData.subsection);
+  }
 
   return (
-    <section className='article-tile'>
-      <img className='tile-img' src='https://static01.nyt.com/images/2023/04/19/multimedia/19dominion-cwfh/19dominion-cwfh-thumbLarge.jpg' />
-      <h3 className='tile-title'>What’s Next for Dominion After Its $787.5 Million Settlement With Fox News?</h3>
-      <p className='tile-category'>Business<br/>Media</p>
+    <section className="article-tile">
+      <img className="tile-img" src={thumbnailImg?.url} />
+      <h3 className="tile-title">{articleData.title}</h3>
+      <p className="tile-category">
+        {section}
+        <br />
+        {subsection}
+      </p>
     </section>
-  )
+  );
 }

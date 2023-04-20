@@ -6,7 +6,7 @@ import getNewsResults from '../../APICalls';
 
 
 export default function BrowseView() {
-  const [newsData, setNewsData] = useState();
+  const [newsData, setNewsData] = useState(undefined);
   const [newsType, setNewsType] = useState("home");
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function BrowseView() {
   return (
     <section className="browse-view">
       <NewsSelector newsType={newsType} setNewsType={setNewsType} />
-      <NewsResults />
+      <NewsResults newsData={newsData} />
     </section>
   )
 }
