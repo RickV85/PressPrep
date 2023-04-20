@@ -22,7 +22,7 @@ interface Multimedia {
 }
 
 export default function ArticleTile({ articleData }: Props) {
-  const thumbnailImg = articleData.multimedia.find(
+  const thumbnailImg = articleData?.multimedia?.find(
     (pic) => pic.format === "Large Thumbnail"
   );
   let section;
