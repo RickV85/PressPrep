@@ -20,7 +20,6 @@
 .tile-title {
   font-weight: 500;
   font-size: 1.3rem;
-  width: 60vw;
   margin: 0px 5px 0px 5px;
 }
 
@@ -31,6 +30,12 @@
   font-size: 1.5rem;
   color: #697A21;
   margin-right: 15px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #373737;
+  width: 60vw;
 }
 
 @media screen and (max-width: 600px) {

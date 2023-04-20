@@ -30,4 +30,18 @@ describe('home', () => {
     })
     cy.get('.loading').contains('An error occurred')
   })
+
+  it('should allow a user to click an article to view details', () => {
+    cy.get('.tile-title').eq(0).click()
+    cy.get('section[class="article-view"]').should('be.visible')
+  })
+
+  it('should display the article details to a user', () => {
+    cy.get('.tile-title').eq(0).click()
+    cy.get('h2').contains('Xi')
+    cy.get('p').eq(0).contains('David')
+    cy.get('p').eq(1).contains('China')
+    cy.get('p').eq(2).contains('World / Asia')
+    cy.get('a[class="article-copy link"]').should('be.visible')
+  })
 })

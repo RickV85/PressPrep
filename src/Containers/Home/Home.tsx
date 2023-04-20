@@ -1,13 +1,19 @@
-import './Home.css'
-import Nav from '../../Components/Nav/Nav'
-import BrowseView from '../BrowseView/BrowseView'
+import "./Home.css";
+import Nav from "../../Components/Nav/Nav";
+import BrowseView from "../BrowseView/BrowseView";
+import { Multimedia } from "../../Components/ArticleTile/ArticleTile";
 
-export default function Home() {
+interface Props {
+  setSelectedArticle: Function;
+}
 
+export default function Home({ setSelectedArticle}: Props) {
   return (
     <main>
       <Nav />
-      <BrowseView />
+      <BrowseView
+        setSelectedArticle={setSelectedArticle}
+      />
     </main>
-  )
+  );
 }

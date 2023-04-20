@@ -1,16 +1,18 @@
 import "./ArticleTile.css";
 import StringUtil from "../../util/util";
+import { NavLink } from "react-router-dom";
 
-interface Props {
+export interface Props {
   articleData: {
     title: string;
     multimedia: Multimedia[];
     section: string;
     subsection: string;
   };
+  setSelectedArticle: Function;
 }
 
-interface Multimedia {
+export interface Multimedia {
   url: string;
   format: string;
   height: number;
@@ -21,10 +23,14 @@ interface Multimedia {
   copyright: string;
 }
 
-export default function ArticleTile({ articleData }: Props) {
+export default function ArticleTile({
+  articleData,
+  setSelectedArticle,
+}: Props) {
   const thumbnailImg = articleData?.multimedia?.find(
     (pic) => pic.format === "Large Thumbnail"
   );
+
   let section;
   let subsection;
 
@@ -35,15 +41,36 @@ export default function ArticleTile({ articleData }: Props) {
     subsection = StringUtil.capFirstLetter(articleData.subsection);
   }
 
-  return (
-    <section className="article-tile">
-      <img className="tile-img" src={thumbnailImg ? thumbnailImg?.url : `Image N/A`} />
-      <h3 className="tile-title">{articleData.title}</h3>
-      <p className="tile-category">
-        {section}
-        <br />
-        {subsection}
-      </p>
-    </section>
-  );
+  if (articleData.title) {
+    return (
+      <section className="article-tile">
+        <img
+          className="tile-img"
+          src={
+            thumbnailImg
+              ? thumbnailImg?.url
+              : `https://st.depositphotos.com/1011646/1255/i/600/depositphotos_12553000-stock-photo-breaking-news-screen.jpg`
+          }
+        />
+        <NavLink
+          to={`/article/${articleData.title}`}
+          className="navlink"
+          onClick={(event) => setSelectedArticle(articleData)}
+        >
+          <h3 className="tile-title">{articleData.title}</h3>
+        </NavLink>
+        <p className="tile-category">
+          {section}
+          <br />
+          {subsection}
+        </p>
+      </section>
+    );
+  } else {
+    return (
+      <section className="article-tile">
+        <h3 className="tile-title">Article not available</h3>
+      </section>
+    );
+  }
 }
