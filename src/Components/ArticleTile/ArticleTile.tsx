@@ -23,8 +23,10 @@ export interface Multimedia {
   copyright: string;
 }
 
-export default function ArticleTile({ articleData, setSelectedArticle }: Props) {
-  
+export default function ArticleTile({
+  articleData,
+  setSelectedArticle,
+}: Props) {
   const thumbnailImg = articleData?.multimedia?.find(
     (pic) => pic.format === "Large Thumbnail"
   );
@@ -42,15 +44,32 @@ export default function ArticleTile({ articleData, setSelectedArticle }: Props) 
   if (articleData.title) {
     return (
       <section className="article-tile">
-        <img className="tile-img" src={thumbnailImg ? thumbnailImg?.url : `https://st.depositphotos.com/1011646/1255/i/600/depositphotos_12553000-stock-photo-breaking-news-screen.jpg`} />
-        <NavLink to={`/article/${articleData.title}`} className='navlink' onClick={event => setSelectedArticle(articleData)}>
+        <img
+          className="tile-img"
+          src={
+            thumbnailImg
+              ? thumbnailImg?.url
+              : `https://st.depositphotos.com/1011646/1255/i/600/depositphotos_12553000-stock-photo-breaking-news-screen.jpg`
+          }
+        />
+        <NavLink
+          to={`/article/${articleData.title}`}
+          className="navlink"
+          onClick={(event) => setSelectedArticle(articleData)}
+        >
           <h3 className="tile-title">{articleData.title}</h3>
-        </NavLink >
+        </NavLink>
         <p className="tile-category">
           {section}
           <br />
           {subsection}
         </p>
+      </section>
+    );
+  } else {
+    return (
+      <section className="article-tile">
+        <h3 className="tile-title">Article not available</h3>
       </section>
     );
   }

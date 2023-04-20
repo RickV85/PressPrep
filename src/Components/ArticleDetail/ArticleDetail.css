@@ -33,6 +33,7 @@
 
 .article-copy-section {
   width: 53vw;
+  margin: 0px 20px 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +41,7 @@
 
 .article-title {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #697A21;
 }
 
@@ -50,7 +51,7 @@
 
 .section-name {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #697A21;
   margin-right: 15px;
 }
@@ -59,4 +60,23 @@
   font-size: 1.5rem;
   font-weight: 800;
   color: #DD403A;
+}
+
+@media screen and (max-width: 800px) {
+  .article-detail {
+    height: 80vh;
+  }
+
+  .article-content {
+    flex-direction: column;
+  }
+
+  .jumbo-img {
+    height: 22vh;
+    margin-bottom: 4vh;
+  }
+
+  .article-copy-section {
+    width: 85vw;
+  }
 }
