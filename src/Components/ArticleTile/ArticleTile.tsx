@@ -24,9 +24,11 @@ export interface Multimedia {
 }
 
 export default function ArticleTile({ articleData, setSelectedArticle }: Props) {
+  
   const thumbnailImg = articleData?.multimedia?.find(
     (pic) => pic.format === "Large Thumbnail"
   );
+
   let section;
   let subsection;
 

@@ -3,22 +3,28 @@ import ArticleDetail from "../../Components/ArticleDetail/ArticleDetail";
 import { Multimedia } from "../../Components/ArticleTile/ArticleTile";
 
 interface Props {
-  selectedArticle: undefined | {
-    title: string;
-    multimedia: Multimedia[];
-    section: string;
-    subsection: string;
-  };
+  selectedArticle:
+    | undefined
+    | {
+        title: string;
+        multimedia: Multimedia[];
+        byline: string;
+        abstract: string;
+        section: string;
+        subsection: string;
+        url: string;
+      };
   setSelectedArticle: Function;
 }
 
-export default function ArticleView({selectedArticle, setSelectedArticle}: Props) {
-  
-
+export default function ArticleView({
+  selectedArticle,
+  setSelectedArticle,
+}: Props) {
   return (
     <main>
       <Nav />
       <ArticleDetail selectedArticle={selectedArticle} />
     </main>
-  )
+  );
 }
