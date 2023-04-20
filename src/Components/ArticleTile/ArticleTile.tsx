@@ -39,17 +39,19 @@ export default function ArticleTile({ articleData, setSelectedArticle }: Props) 
     subsection = StringUtil.capFirstLetter(articleData.subsection);
   }
 
-  return (
-    <section className="article-tile">
-      <img className="tile-img" src={thumbnailImg ? thumbnailImg?.url : `Image N/A`} />
-      <NavLink to={`/article/${articleData.title}`} className='navlink' onClick={event => setSelectedArticle(articleData)}>
-        <h3 className="tile-title">{articleData.title}</h3>
-      </NavLink >
-      <p className="tile-category">
-        {section}
-        <br />
-        {subsection}
-      </p>
-    </section>
-  );
+  if (articleData.title) {
+    return (
+      <section className="article-tile">
+        <img className="tile-img" src={thumbnailImg ? thumbnailImg?.url : `https://st.depositphotos.com/1011646/1255/i/600/depositphotos_12553000-stock-photo-breaking-news-screen.jpg`} />
+        <NavLink to={`/article/${articleData.title}`} className='navlink' onClick={event => setSelectedArticle(articleData)}>
+          <h3 className="tile-title">{articleData.title}</h3>
+        </NavLink >
+        <p className="tile-category">
+          {section}
+          <br />
+          {subsection}
+        </p>
+      </section>
+    );
+  }
 }

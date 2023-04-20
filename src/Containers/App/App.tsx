@@ -7,8 +7,11 @@ import { Multimedia } from "../../Components/ArticleTile/ArticleTile";
 export interface Article {
   title: string;
   multimedia: Multimedia[];
+  byline: string;
+  abstract: string;
   section: string;
   subsection: string;
+  url: string;
 }
 
 export default function App() {

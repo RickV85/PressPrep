@@ -8,12 +8,6 @@ interface Props {
   setSelectedArticle: Function;
 }
 
-interface ArticleData {
-  title: string;
-  multimedia: Multimedia[];
-  section: string;
-  subsection: string;
-};
 
 export default function NewsResults({ newsData, loading, errorMsg, setSelectedArticle }: Props) {
   return (
