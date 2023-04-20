@@ -1,0 +1,236 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "home",
+  "last_updated": "2023-04-20T13:16:22-04:00",
+  "num_results": 27,
+  "results": [
+    {
+      "section": "world",
+      "subsection": "asia",
+      "title": "As Xi Befriends World Leaders, He Hardens His Stance on the U.S.",
+      "abstract": "China has rebuffed calls to restart high-level talks with the United States, raising the risk of confrontation in contested areas like the Taiwan Strait.",
+      "url": "https://www.nytimes.com/2023/04/20/world/asia/xi-china-us.html",
+      "uri": "nyt://article/025498e8-8f44-5c30-9a50-588043a46db5",
+      "byline": "By David Pierson",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T08:22:12-04:00",
+      "created_date": "2023-04-20T05:01:08-04:00",
+      "published_date": "2023-04-20T05:01:08-04:00",
+      "material_type_facet": "",
+      "kicker": "News Analysis",
+      "des_facet": ["International Trade and World Market"],
+      "org_facet": [],
+      "per_facet": ["Xi Jinping"],
+      "geo_facet": ["China", "United States", "Taiwan"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/00china-us-zhbl/00china-us-zhbl-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "President Xi Jinping of China with President Luiz Inácio Lula da Silva of Brazil last week in Beijing.",
+          "copyright": "Pool photo by Ken Ishii"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/00china-us-zhbl/00china-us-zhbl-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "President Xi Jinping of China with President Luiz Inácio Lula da Silva of Brazil last week in Beijing.",
+          "copyright": "Pool photo by Ken Ishii"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/00china-us-zhbl/00china-us-zhbl-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "President Xi Jinping of China with President Luiz Inácio Lula da Silva of Brazil last week in Beijing.",
+          "copyright": "Pool photo by Ken Ishii"
+        }
+      ],
+      "short_url": "https://nyti.ms/3LgmkTU"
+    },
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "Israel’s Right-Wing Government Has Jewish Democrats at a Loss",
+      "abstract": "American lawmakers defending Israel have often fallen back on what they call the countries’ shared democratic values. But defending the current far-right government is proving a lot harder.",
+      "url": "https://www.nytimes.com/2023/04/20/us/politics/israel-democrats-jews.html",
+      "uri": "nyt://article/b74b3892-a901-5c7e-a090-0a8f11c8fc99",
+      "byline": "By Jonathan Weisman",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T12:56:42-04:00",
+      "created_date": "2023-04-20T12:56:42-04:00",
+      "published_date": "2023-04-20T12:56:42-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Jews and Judaism",
+        "United States Politics and Government",
+        "Palestinians",
+        "Zionism",
+        "United States International Relations"
+      ],
+      "org_facet": ["Democratic Party"],
+      "per_facet": [
+        "Biden, Joseph R Jr",
+        "McCarthy, Kevin (1965- )",
+        "Netanyahu, Benjamin"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20pol-israel-jtwm/20pol-israel-jtwm-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Israelis protesting against Prime Minister Benjamin Netanyahu’s plan to overhaul the country’s judiciary, which has also divided American Jews.",
+          "copyright": "Avishag Shaar-Yashuv for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20pol-israel-jtwm/20pol-israel-jtwm-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Israelis protesting against Prime Minister Benjamin Netanyahu’s plan to overhaul the country’s judiciary, which has also divided American Jews.",
+          "copyright": "Avishag Shaar-Yashuv for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20pol-israel-jtwm/20pol-israel-jtwm-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Israelis protesting against Prime Minister Benjamin Netanyahu’s plan to overhaul the country’s judiciary, which has also divided American Jews.",
+          "copyright": "Avishag Shaar-Yashuv for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/43MFgAW"
+    },
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "DeSantis’s Electability Pitch Wobbles, Despite G.O.P. Losses Under Trump",
+      "abstract": "The former president’s rivals are seeking to tap into Republican frustration with recent election disappointments to urge a new face for the party in 2024, but it is proving to be a tough sell.",
+      "url": "https://www.nytimes.com/2023/04/20/us/politics/republicans-electability-trump-desantis.html",
+      "uri": "nyt://article/06c0aedb-560d-57de-868c-7321195ea66f",
+      "byline": "By Shane Goldmacher",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T09:05:09-04:00",
+      "created_date": "2023-04-20T05:01:03-04:00",
+      "published_date": "2023-04-20T05:01:03-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Presidential Election of 2024",
+        "United States Politics and Government",
+        "Primaries and Caucuses",
+        "Voting and Voters"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J", "DeSantis, Ron"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/18/multimedia/00pol-electability-glzp/00pol-electability-glzp-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1524,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ron DeSantis has cast himself as more electable than Donald J. Trump, but for years Republican primary voters have cast ballots with their hearts, opting for hard-liners who lose in general elections.",
+          "copyright": "Scott Eisen/Getty Images; Christopher Lee for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/18/multimedia/00pol-electability-glzp/00pol-electability-glzp-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ron DeSantis has cast himself as more electable than Donald J. Trump, but for years Republican primary voters have cast ballots with their hearts, opting for hard-liners who lose in general elections.",
+          "copyright": "Scott Eisen/Getty Images; Christopher Lee for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/18/multimedia/00pol-electability-glzp/00pol-electability-glzp-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ron DeSantis has cast himself as more electable than Donald J. Trump, but for years Republican primary voters have cast ballots with their hearts, opting for hard-liners who lose in general elections.",
+          "copyright": "Scott Eisen/Getty Images; Christopher Lee for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3AjyswY"
+    },
+    {
+      "section": "us",
+      "subsection": "",
+      "title": "Hundreds of Miles Apart, Separate Shootings Follow Wrong Turns",
+      "abstract": "Two men appeared in courtrooms in different parts of the country on Wednesday, charged in shootings that came after minor missteps on everyday tasks.",
+      "url": "https://www.nytimes.com/2023/04/19/us/yarl-gillis-shooting-missouri-ny.html",
+      "uri": "nyt://article/9826a8e7-aa93-5f04-b105-93c0b8177a78",
+      "byline": "By Julie Bosman, Mitch Smith, Jesse McKinley and Jay Root",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T11:22:32-04:00",
+      "created_date": "2023-04-19T16:56:58-04:00",
+      "published_date": "2023-04-19T16:56:58-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Murders, Attempted Murders and Homicides", "Assaults"],
+      "org_facet": [],
+      "per_facet": [
+        "Yarl, Ralph",
+        "Gillis, Kaylin (2003-23)",
+        "Monahan, Kevin D (1957- )"
+      ],
+      "geo_facet": ["Kansas City (Mo)", "Fort Edward (NY)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/19nat-suspects-top-kfjw/19nat-suspects-top-kfjw-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1152,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Andrew D. Lester, charged in the shooting of Ralph Yarl, pleaded not guilty on Wednesday.",
+          "copyright": "via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/19nat-suspects-top-kfjw/19nat-suspects-top-kfjw-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Andrew D. Lester, charged in the shooting of Ralph Yarl, pleaded not guilty on Wednesday.",
+          "copyright": "via Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/19nat-suspects-top-kfjw/19nat-suspects-top-kfjw-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Andrew D. Lester, charged in the shooting of Ralph Yarl, pleaded not guilty on Wednesday.",
+          "copyright": "via Reuters"
+        }
+      ],
+      "short_url": "https://nyti.ms/43L41xr"
+    }
+  ]
+}
