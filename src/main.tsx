@@ -1,22 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './Containers/Home/Home'
+import { BrowserRouter } from "react-router-dom";
 import './index.css'
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-]);
+import App from './Containers/App/App';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 )

@@ -1,7 +1,7 @@
 import "./ArticleTile.css";
 import StringUtil from "../../util/util";
 
-interface Props {
+export interface ArticleData {
   articleData: {
     title: string;
     multimedia: Multimedia[];
@@ -21,7 +21,7 @@ interface Multimedia {
   copyright: string;
 }
 
-export default function ArticleTile({ articleData }: Props) {
+export default function ArticleTile({ articleData }: ArticleData) {
   const thumbnailImg = articleData?.multimedia?.find(
     (pic) => pic.format === "Large Thumbnail"
   );
