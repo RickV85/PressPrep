@@ -1,10 +1,16 @@
 import './ArticleDetail.css'
 
-export default function ArticleDetail() {
+interface Props {
+  selectedArticle: undefined | {
+    title: string;
+  };
+}
+
+export default function ArticleDetail({selectedArticle}: Props) {
 
   return (
     <section>
-      <p>TEST</p>
+      <p>{selectedArticle?.title}</p>
     </section>
   )
 }

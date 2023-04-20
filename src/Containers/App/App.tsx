@@ -1,14 +1,38 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import ArticleView from "../ArticleView/ArticleView";
+import { useState } from "react";
+import { Multimedia } from "../../Components/ArticleTile/ArticleTile";
 
+export interface Article {
+  title: string;
+  multimedia: Multimedia[];
+  section: string;
+  subsection: string;
+}
 
 export default function App() {
+  const [selectedArticle, setSelectedArticle] = useState <Article>();
 
-  return(
+  return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/article/*" element={<ArticleView />} />
+      <Route
+        path="/"
+        element={
+          <Home
+            setSelectedArticle={setSelectedArticle}
+          />
+        }
+      />
+      <Route
+        path="/article/*"
+        element={
+          <ArticleView
+            selectedArticle={selectedArticle}
+            setSelectedArticle={setSelectedArticle}
+          />
+        }
+      />
     </Routes>
-  )
+  );
 }
