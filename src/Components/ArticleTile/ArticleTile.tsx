@@ -37,7 +37,7 @@ export default function ArticleTile({ articleData }: Props) {
 
   return (
     <section className="article-tile">
-      <img className="tile-img" src={thumbnailImg?.url} />
+      <img className="tile-img" src={thumbnailImg ? thumbnailImg?.url : `Image N/A`} />
       <h3 className="tile-title">{articleData.title}</h3>
       <p className="tile-category">
         {section}
