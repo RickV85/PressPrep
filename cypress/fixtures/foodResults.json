@@ -1,0 +1,125 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "Food",
+  "last_updated": "2023-04-20T12:46:16-04:00",
+  "num_results": 39,
+  "results": [
+    {
+      "section": "dining",
+      "subsection": "",
+      "title": "Barbara Lynch, a Leading Boston Restaurateur, Is Accused of Workplace Abuse",
+      "abstract": "The chef has spoken out against sexism and abuse, but many former cooks and staff members say she has verbally and physically harassed workers for decades.",
+      "url": "https://www.nytimes.com/2023/04/20/dining/barbara-lynch-boston-workplace-abuse.html",
+      "uri": "nyt://article/f39c7a31-67ab-5cdd-8cf4-16508a48fe66",
+      "byline": "By Julia Moskin",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T08:46:34-04:00",
+      "created_date": "2023-04-20T05:01:02-04:00",
+      "published_date": "2023-04-20T05:01:02-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Workplace Hazards and Violations",
+        "Restaurants",
+        "Chefs",
+        "Sexual Harassment",
+        "Alcohol Abuse",
+        "#MeToo Movement",
+        "Workplace Environment"
+      ],
+      "org_facet": ["Barbara Lynch Gruppo", "Menton (Boston, MA, restaurant)"],
+      "per_facet": ["Lynch, Barbara"],
+      "geo_facet": ["Boston (Mass)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20lynch01-kfqt/00btl-01sub-kfqt-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Barbara Lynch cooking in 2015. Twenty former employees said her fame and connections protected her from the consequences of her drinking and abusive behavior.",
+          "copyright": "Erik Jacobs for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20lynch01-kfqt/00btl-01sub-kfqt-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Barbara Lynch cooking in 2015. Twenty former employees said her fame and connections protected her from the consequences of her drinking and abusive behavior.",
+          "copyright": "Erik Jacobs for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/20/multimedia/20lynch01-kfqt/00btl-01sub-kfqt-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Barbara Lynch cooking in 2015. Twenty former employees said her fame and connections protected her from the consequences of her drinking and abusive behavior.",
+          "copyright": "Erik Jacobs for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/43Q4MVM"
+    },
+    {
+      "section": "dining",
+      "subsection": "",
+      "title": "Restaurant Review: Mam Serves the Most Exciting Vietnamese Food in New York",
+      "abstract": "Not quite a pop-up, Mam brings the tastes of a Hanoi lunch to the Lower East Side. Can it put down firmer roots?",
+      "url": "https://www.nytimes.com/2023/04/18/dining/restaurant-review-mam-vietnamese-food.html",
+      "uri": "nyt://article/108e65bb-efd3-5eba-a1fe-daafa8745689",
+      "byline": "By Pete Wells",
+      "item_type": "Article",
+      "updated_date": "2023-04-20T10:57:43-04:00",
+      "created_date": "2023-04-18T15:20:11-04:00",
+      "published_date": "2023-04-18T15:20:11-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Restaurants",
+        "Vietnamese Food (Cuisine)",
+        "Vietnamese-Americans"
+      ],
+      "org_facet": ["Mam (Manhattan, NY, Restaurant)"],
+      "per_facet": [],
+      "geo_facet": ["Lower East Side (Manhattan, NY)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/18rest-mam-01-hjgp/18rest-mam-01-hjgp-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1638,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bun dau mam tom has many components, but mam tom, a fermented-shrimp sauce, top, is the focal point. Its insistent, penetrating aroma makes it divisive even in Vietnam.",
+          "copyright": "Nico Schinco for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/18rest-mam-01-hjgp/18rest-mam-01-hjgp-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bun dau mam tom has many components, but mam tom, a fermented-shrimp sauce, top, is the focal point. Its insistent, penetrating aroma makes it divisive even in Vietnam.",
+          "copyright": "Nico Schinco for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/04/19/multimedia/18rest-mam-01-hjgp/18rest-mam-01-hjgp-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bun dau mam tom has many components, but mam tom, a fermented-shrimp sauce, top, is the focal point. Its insistent, penetrating aroma makes it divisive even in Vietnam.",
+          "copyright": "Nico Schinco for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/41GMMvt"
+    }
+  ]
+}
