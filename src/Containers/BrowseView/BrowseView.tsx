@@ -28,8 +28,7 @@ export default function BrowseView({
       })
       .catch((error) => {
         setLoading(false);
-        setErrorMsg(`An error occurred, please try refreshing Error: ${error}`);
-        alert(error);
+        setErrorMsg(`An error occurred, please try refreshing`);
       });
   }, [newsType]);
 
