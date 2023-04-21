@@ -17,11 +17,23 @@ interface Props {
 }
 
 export default function ArticleDetail({ selectedArticle }: Props) {
-  console.log(selectedArticle);
 
   const jumboImg = selectedArticle?.multimedia?.find(
     (pic) => pic.format === "Super Jumbo"
   );
+
+  let title;
+
+  if (selectedArticle?.title) {
+    title = <h2 className="article-title">{selectedArticle?.title}</h2>;
+  } else {
+    title = (
+      <h2 className="link">
+        Error loading article detail. Please return to the home page by clicking
+        the site title above.
+      </h2>
+    );
+  }
 
   let section;
   let subsection;
@@ -33,6 +45,16 @@ export default function ArticleDetail({ selectedArticle }: Props) {
     subsection = `/ ${StringUtil.capFirstLetter(selectedArticle.subsection)}`;
   } else {
     subsection = "";
+  }
+
+  let link;
+
+  if (selectedArticle?.url) {
+    link = (
+      <a className="article-copy link" href={selectedArticle?.url}>
+        Link to article on NYT.com
+      </a>
+    );
   }
 
   return (
@@ -48,15 +70,13 @@ export default function ArticleDetail({ selectedArticle }: Props) {
             className="jumbo-img"
           />
           <div className="article-copy-section">
-            <h2 className="article-title">{selectedArticle?.title}</h2>
+            {title}
             <p className="article-copy">{selectedArticle?.byline}</p>
             <p className="article-copy">{selectedArticle?.abstract}</p>
             <p className="article-copy section-name">
               {section} {subsection}
             </p>
-            <a className="article-copy link" href={selectedArticle?.url}>
-              Link to article on NYT.com
-            </a>
+            {link}
           </div>
         </div>
       </article>

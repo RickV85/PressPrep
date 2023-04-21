@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -17,7 +17,7 @@ main {
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #B8B42D;
+  color: #b8b42d;
   padding: 1rem;
   width: fit-content;
 }

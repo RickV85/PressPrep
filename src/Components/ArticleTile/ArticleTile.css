@@ -1,5 +1,5 @@
 .article-tile {
-  background-color: #FFFCE8;
+  background-color: #fffce8;
   height: 12vh;
   width: 87vw;
   max-width: 756px;
@@ -28,7 +28,7 @@
   min-width: fit-content;
   font-weight: 800;
   font-size: 1.5rem;
-  color: #697A21;
+  color: #697a21;
   margin-right: 15px;
 }
 
@@ -48,10 +48,10 @@
   }
 
   .tile-category {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  
+
   .tile-title {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }

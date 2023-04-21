@@ -9,9 +9,17 @@ interface Props {
   setSelectedArticle: Function;
 }
 
-export default function BrowseView({
-  setSelectedArticle,
-}: Props) {
+interface Article {
+  title: string;
+  multimedia: Multimedia[];
+  byline: string;
+  abstract: string;
+  section: string;
+  subsection: string;
+  url: string;
+}
+
+export default function BrowseView({ setSelectedArticle }: Props) {
   const [newsData, setNewsData] = useState(undefined);
   const [newsType, setNewsType] = useState("home");
   const [loading, setLoading] = useState(false);
@@ -22,11 +30,23 @@ export default function BrowseView({
     getNewsResults(newsType)
       .then((data) => {
         if (data) {
-          setNewsData(data.results);
+          const cleanData = data.results.map((article: Article) => {
+            const newArticle = {
+              section: article.section,
+              subsection: article.subsection,
+              title: article.title,
+              abstract: article.abstract,
+              url: article.url,
+              byline: article.byline,
+              multimedia: article.multimedia,
+            };
+            return newArticle;
+          });
+          setNewsData(cleanData);
           setLoading(false);
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setLoading(false);
         setErrorMsg(`An error occurred, please try refreshing`);
       });
