@@ -1,7 +1,5 @@
-import "./Home.css";
 import Nav from "../../Components/Nav/Nav";
 import BrowseView from "../BrowseView/BrowseView";
-import { Multimedia } from "../../Components/ArticleTile/ArticleTile";
 
 interface Props {
   setSelectedArticle: Function;

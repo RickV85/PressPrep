@@ -15,26 +15,17 @@ export interface Article {
 }
 
 export default function App() {
-  const [selectedArticle, setSelectedArticle] = useState <Article>();
+  const [selectedArticle, setSelectedArticle] = useState<Article>();
 
   return (
     <Routes>
       <Route
         path="/"
-        element={
-          <Home
-            setSelectedArticle={setSelectedArticle}
-          />
-        }
+        element={<Home setSelectedArticle={setSelectedArticle} />}
       />
       <Route
         path="/article/*"
-        element={
-          <ArticleView
-            selectedArticle={selectedArticle}
-            setSelectedArticle={setSelectedArticle}
-          />
-        }
+        element={<ArticleView selectedArticle={selectedArticle} />}
       />
     </Routes>
   );

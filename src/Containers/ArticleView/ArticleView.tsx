@@ -14,12 +14,10 @@ interface Props {
         subsection: string;
         url: string;
       };
-  setSelectedArticle: Function;
 }
 
 export default function ArticleView({
-  selectedArticle,
-  setSelectedArticle,
+  selectedArticle
 }: Props) {
   return (
     <main>

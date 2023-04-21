@@ -1,22 +1,25 @@
-import { useState, useEffect } from 'react';
-import './NewsSelector.css'
+import { useState, useEffect } from "react";
+import "./NewsSelector.css";
 
 interface Props {
   newsType: string;
   setNewsType: Function;
 }
 
-export default function NewsSelector({newsType, setNewsType} : Props) {
+export default function NewsSelector({ newsType, setNewsType }: Props) {
   const [selectedNews, setSelectedNews] = useState(newsType);
 
   useEffect(() => {
-    setNewsType(selectedNews)
-  }, [selectedNews])
- 
+    setNewsType(selectedNews);
+  }, [selectedNews]);
+
   return (
-    <section className='news-selector'>
-      <h2 className='choose-news'>Choose your news:</h2>
-      <select className='news-dropdown' onChange={(event) => setSelectedNews(event.target.value)}>
+    <section className="news-selector">
+      <h2 className="choose-news">Choose your news:</h2>
+      <select
+        className="news-dropdown"
+        onChange={(event) => setSelectedNews(event.target.value)}
+      >
         <option value="home">Home (Top Stories)</option>
         <option value="us">US News</option>
         <option value="world">World News</option>
@@ -45,5 +48,5 @@ export default function NewsSelector({newsType, setNewsType} : Props) {
         <option value="upshot">Upshot</option>
       </select>
     </section>
-  )
+  );
 }

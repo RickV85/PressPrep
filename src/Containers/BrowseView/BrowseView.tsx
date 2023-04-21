@@ -19,9 +19,7 @@ interface Article {
   url: string;
 }
 
-export default function BrowseView({
-  setSelectedArticle,
-}: Props) {
+export default function BrowseView({ setSelectedArticle }: Props) {
   const [newsData, setNewsData] = useState(undefined);
   const [newsType, setNewsType] = useState("home");
   const [loading, setLoading] = useState(false);
@@ -40,10 +38,10 @@ export default function BrowseView({
               abstract: article.abstract,
               url: article.url,
               byline: article.byline,
-              multimedia: article.multimedia
-            }
+              multimedia: article.multimedia,
+            };
             return newArticle;
-          })
+          });
           setNewsData(cleanData);
           setLoading(false);
         }
