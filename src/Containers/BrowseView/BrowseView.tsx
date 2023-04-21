@@ -26,7 +26,7 @@ export default function BrowseView({
           setLoading(false);
         }
       })
-      .catch((error) => {
+      .catch(() => {
         setLoading(false);
         setErrorMsg(`An error occurred, please try refreshing`);
       });
