@@ -9,6 +9,16 @@ interface Props {
   setSelectedArticle: Function;
 }
 
+interface Article {
+  title: string;
+  multimedia: Multimedia[];
+  byline: string;
+  abstract: string;
+  section: string;
+  subsection: string;
+  url: string;
+}
+
 export default function BrowseView({
   setSelectedArticle,
 }: Props) {
@@ -22,7 +32,19 @@ export default function BrowseView({
     getNewsResults(newsType)
       .then((data) => {
         if (data) {
-          setNewsData(data.results);
+          const cleanData = data.results.map((article: Article) => {
+            const newArticle = {
+              section: article.section,
+              subsection: article.subsection,
+              title: article.title,
+              abstract: article.abstract,
+              url: article.url,
+              byline: article.byline,
+              multimedia: article.multimedia
+            }
+            return newArticle;
+          })
+          setNewsData(cleanData);
           setLoading(false);
         }
       })

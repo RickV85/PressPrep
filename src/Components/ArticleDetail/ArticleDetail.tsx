@@ -17,7 +17,6 @@ interface Props {
 }
 
 export default function ArticleDetail({ selectedArticle }: Props) {
-  console.log(selectedArticle);
 
   const jumboImg = selectedArticle?.multimedia?.find(
     (pic) => pic.format === "Super Jumbo"
@@ -28,7 +27,12 @@ export default function ArticleDetail({ selectedArticle }: Props) {
   if (selectedArticle?.title) {
     title = <h2 className="article-title">{selectedArticle?.title}</h2>;
   } else {
-    title = <h2 className="link">Error loading article detail</h2>
+    title = (
+      <h2 className="link">
+        Error loading article detail. Please return to the home page by clicking
+        the site title above.
+      </h2>
+    );
   }
 
   let section;
