@@ -37,3 +37,8 @@ The app must include the following for MVP:
 - Completed build to match Figma design
 - Adaptive user interface allows a user to view on mobile devices
 - Added user-facing error handling for server errors and bad data
+
+## Challenges
+
+- Using Vite for the first time presented challenges to using .env variables
+- Typescript makes development more difficult and slower but avoided use of "any" types
