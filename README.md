@@ -2,23 +2,28 @@
 
 ## Abstract
 
-PressPrep consolidates the latest news articles from the New York Times in
+PrepPress consolidates the latest news articles from the New York Times in
 an adaptive user interface that allows a user to browse the latest news
 from wherever they may be. The user can quickly decide what type of
 headlines that they would like to browse, view more details and then
 be linked directly to the full article on New York Times.
 
-## Preview of the application
+## Deployed Application
 
-
+[Click here to view the deployed PrepPress application on Vercel](https://press-prep-iheog3cfq-rickv85.vercel.app/)
 
 ## Installation
+
+NOTE: API Key for New York Times is needed to operate. Please contact me for a key or view above deployed application.
 
 In your terminal, run the following commands:
 
 git clone git@github.com:RickV85/PressPrep.git
+
 cd [directory you created it in]
+
 npm install
+
 npm run dev
 
 ## Build Objectives
